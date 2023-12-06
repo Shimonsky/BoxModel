@@ -1,0 +1,124 @@
+body {
+    text-align: -webkit-center;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+main {
+    width: 70%;
+    height: 436px;
+}
+
+
+nav {
+    font-size: 22px;
+    background-color: #a306b6;
+}
+
+
+ul {
+    padding: 0;
+    text-align: left;
+    margin: 0px;
+}
+
+li {
+    display:inline-block;
+    margin: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 21px 10px;
+    margin-right: -36px;
+}
+
+a:hover {
+    background-color: white;
+    color: #a306b6;
+}
+
+
+h1 {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 0px;
+}
+
+form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+
+form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div {
+    text-align: justify;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#message {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    height: 140px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: none;
+}
+
+button {
+    display: flex;
+    height: 23px;
+    width: 67px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #a306b6;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: #a306b6;
+    
+}
+
+
+
+
+footer {
+    display: flex;
+    background-color: darkgray;
+    height: 31px;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
