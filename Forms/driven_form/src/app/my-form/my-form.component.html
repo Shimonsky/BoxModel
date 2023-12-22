@@ -1,0 +1,39 @@
+<p>my-form works!</p>
+<p>my-form works!</p>
+<form #myForm="ngForm" (ngSubmit)="myForm.valid && onSubmit()">
+    
+    <div>
+        Form submitted ? {{myForm.submitted}}
+        Form valid ? {{myForm.valid}}
+        Form invalid ? {{myForm.invalid}}
+    </div>
+    
+    <fieldset>
+      <label for="title-order">Title</label>
+      <input id="title-order" name="title-order" type="text" [(ngModel)]="model.title" #title="ngModel" required minlength="5">
+    </fieldset>
+
+    <div *ngIf="title.errors">
+      <span *ngIf="title.errors?.['required']">Le titre est requis</span>
+      <span *ngIf="title.errors?.['minlength']">La longueur minimale doit être supérieure à 5</span>
+      <span *ngIf="title.errors?.['maxlength']">La longueur maximale doit être inférieure à 30</span>
+    </div>
+
+    <fieldset>
+      <label for="quantity-order">Quantité</label>
+      <input id="quantity-order" name="quantity-order" [(ngModel)]="model.quantity" type="number" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="date-order">Date de commande</label>
+      <input id="date-order" name="date-order" [(ngModel)]="model.date" type="date" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="contact-order">Contact</label>
+      <input id="contact-order" name="contact-order"[(ngModel)]="model.contact" type="email" required email>
+    </fieldset>
+
+    <button type="reset">Restaurer</button>
+    <button type="submit">Sauvegarder</button>
+</form>
